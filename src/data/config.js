@@ -1,9 +1,9 @@
 module.exports = {
-  defaultTitle: 'BLOCKBOARD',
+  defaultTitle: 'Blockboard',
   logo: 'https://portfolio.smakosh.com/favicon/favicon-512.png',
-  author: 'BLOCKBOARD',
+  author: 'Blockboard',
   url: 'https://portfolio.smakosh.com',
-  legalName: 'BLOCKBOARD',
+  legalName: 'Blockboard',
   defaultDescription: 'Building Decentralized Applications on the Blockchain.',
   socialLinks: {
     twitter: 'http://www.twitter.com/smakosh',
