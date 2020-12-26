@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+// import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Header } from 'components/theme';
 import { Container, Button } from 'components/common';
@@ -14,11 +14,11 @@ export const Intro = () => {
       <Header />
       <IntroWrapper as={Container}>
         <Details theme={theme}>
-          <h1>Hi There!</h1>
-          <h4>I’m John and I’m a JAMStack engineer!</h4>
-          <Button as={AnchorLink} href="#contact">
+          <h1>We are Blockboard</h1>
+          <h4>Building Decentralized Applications on the Blockchain.</h4>
+          {/* <Button as={AnchorLink} href="#contact">
             Hire me
-          </Button>
+          </Button> */}
         </Details>
         <Thumbnail>
           <img src={dev} alt="I’m John and I’m a JAMStack engineer!" />
