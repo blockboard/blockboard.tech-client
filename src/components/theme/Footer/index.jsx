@@ -9,11 +9,7 @@ export const Footer = () => (
       <Details>
         <h2>Blockboard</h2>
         <span>
-          © All rights are reserved | {new Date().getFullYear()} | Made with{' '}
-          <span aria-label="love" role="img">
-            💖
-          </span>{' '}
-          by{' '}
+          © All rights are reserved | {new Date().getFullYear()} | Made by{' '}
           <a href="https://smakosh.com/?ref=portfolio-dev" rel="noopener noreferrer" target="_blank">
             Blockboard
           </a>
