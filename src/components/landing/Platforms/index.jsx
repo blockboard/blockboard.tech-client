@@ -48,35 +48,33 @@ export const Platforms = () => {
     <Wrapper as={Container} id="platforms">
       <h2>Platforms</h2>
       <Grid>
-        {edges.map(({ node }) => (
-          <Item key={node.id} as="a" href={node.url} target="_blank" rel="noopener noreferrer" theme={theme}>
-            <Card theme={theme}>
-              <Content>
-                <h4>{node.name}</h4>
-                <p>{node.description}</p>
-              </Content>
-              <TitleWrap>
-                <Stats theme={theme}>
-                  <div>
-                    <Star color={theme === 'light' ? '#000' : '#fff'} />
-                    <span>{node.stargazers.totalCount}</span>
-                  </div>
-                  <div>
-                    <Fork color={theme === 'light' ? '#000' : '#fff'} />
-                    <span>{node.forkCount}</span>
-                  </div>
-                </Stats>
-                <Stats theme={theme}>
-                  <Languages>
-                    {node.languages.nodes.map(({ id, name }) => (
-                      <span key={id}>{name}</span>
-                    ))}
-                  </Languages>
-                </Stats>
-              </TitleWrap>
-            </Card>
-          </Item>
-        ))}
+        <Item key={1} as="a" href="#" target="_blank" rel="noopener noreferrer" theme={theme}>
+          <Card theme={theme}>
+            <Content>
+              <h4>Project Name</h4>
+              <p>Project Description</p>
+            </Content>
+            <TitleWrap></TitleWrap>
+          </Card>
+        </Item>
+        <Item key={1} as="a" href="#" target="_blank" rel="noopener noreferrer" theme={theme}>
+          <Card theme={theme}>
+            <Content>
+              <h4>Project Name</h4>
+              <p>Project Description</p>
+            </Content>
+            <TitleWrap></TitleWrap>
+          </Card>
+        </Item>
+        <Item key={1} as="a" href="#" target="_blank" rel="noopener noreferrer" theme={theme}>
+          <Card theme={theme}>
+            <Content>
+              <h4>Project Name</h4>
+              <p>Project Description</p>
+            </Content>
+            <TitleWrap></TitleWrap>
+          </Card>
+        </Item>
       </Grid>
     </Wrapper>
   );
