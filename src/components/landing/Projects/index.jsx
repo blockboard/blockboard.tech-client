@@ -57,16 +57,6 @@ export const Projects = () => {
               </Content>
               <TitleWrap>
                 <Stats theme={theme}>
-                  <div>
-                    <Star color={theme === 'light' ? '#000' : '#fff'} />
-                    <span>{node.stargazers.totalCount}</span>
-                  </div>
-                  <div>
-                    <Fork color={theme === 'light' ? '#000' : '#fff'} />
-                    <span>{node.forkCount}</span>
-                  </div>
-                </Stats>
-                <Stats theme={theme}>
                   <Languages>
                     {node.languages.nodes.map(({ id, name }) => (
                       <span key={id}>{name}</span>
