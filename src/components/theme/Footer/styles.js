@@ -2,7 +2,7 @@ import footerIllustration from 'assets/illustrations/footer.svg';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding: 28rem 0 4rem 0;
+  padding: 10rem 0 4rem 0;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
