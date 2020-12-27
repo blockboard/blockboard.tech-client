@@ -48,25 +48,158 @@ export const Projects = () => {
     <Wrapper as={Container} id="projects">
       <h2>Projects</h2>
       <Grid>
-        {edges.map(({ node }) => (
-          <Item key={node.id} as="a" href={node.url} target="_blank" rel="noopener noreferrer" theme={theme}>
-            <Card theme={theme}>
-              <Content>
-                <h4>{node.name}</h4>
-                <p>{node.description}</p>
-              </Content>
-              <TitleWrap>
-                <Stats theme={theme}>
-                  <Languages>
-                    {node.languages.nodes.map(({ id, name }) => (
-                      <span key={id}>{name}</span>
-                    ))}
-                  </Languages>
-                </Stats>
-              </TitleWrap>
-            </Card>
-          </Item>
-        ))}
+        <Item
+          key={0}
+          as="p"
+          rel="noopener noreferrer"
+          theme={theme}
+        >
+          <Card theme={theme}>
+            <Content>
+              <h4>CryptoWeirdos</h4>
+              <p>
+                A Non-Fungible Tokens (NFT) project on top of Ethereum following ERC-721 standard with MetaMask login
+                system, integrated with OpenSea marketplace.
+              </p>
+            </Content>
+            <TitleWrap>
+              <Stats theme={theme}>
+                <Languages>
+                  <span key={0}>Javascript</span>
+                  <span key={1}>Solidity</span>
+                  <span key={2}>Shell</span>
+                  <span key={1}>IPFS</span>
+                  <span key={3}>OpenSea</span>
+                </Languages>
+              </Stats>
+            </TitleWrap>
+          </Card>
+        </Item>
+        <Item
+          key={0}
+          as="p"
+          rel="noopener noreferrer"
+          theme={theme}
+        >
+          <Card theme={theme}>
+            <Content>
+              <h4>Unity Game LL</h4>
+              <p>
+                A Non-Fungible Tokens (NFT) project on top of Ethereum following ERC-721 standard with MetaMask login
+                system.
+              </p>
+            </Content>
+            <TitleWrap>
+              <Stats theme={theme}>
+                <Languages>
+                  <span key={0}>Unity 3D</span>
+                  <span key={1}>.netcore</span>
+                  <span key={1}>C#</span>
+                  <span key={1}>WebGl</span>
+                </Languages>
+              </Stats>
+            </TitleWrap>
+          </Card>
+        </Item>
+        <Item
+          key={0}
+          as="p"
+          rel="noopener noreferrer"
+          theme={theme}
+        >
+          <Card theme={theme}>
+            <Content>
+              <h4>Stampit</h4>
+              <p>A decentralized application (DApp) for stamping artistic assets on Blockstack.</p>
+            </Content>
+            <TitleWrap>
+              <Stats theme={theme}>
+                <Languages>
+                  <span key={0}>ReactJS</span>
+                  <span key={1}>NodeJS</span>
+                  <span key={1}>IPFS</span>
+                </Languages>
+              </Stats>
+            </TitleWrap>
+          </Card>
+        </Item>
+        <Item
+          key={0}
+          as="p"
+          rel="noopener noreferrer"
+          theme={theme}
+        >
+          <Card theme={theme}>
+            <Content>
+              <h4>Eth Token Generator</h4>
+              <p>
+                A Non-Fungible Tokens (NFT) project on top of Ethereum following ERC-721 standard with MetaMask login
+                system.
+              </p>
+            </Content>
+            <TitleWrap>
+              <Stats theme={theme}>
+                <Languages>
+                  <span key={0}>Javascript</span>
+                  <span key={1}>Solidity</span>
+                  <span key={1}>Shell</span>
+                </Languages>
+              </Stats>
+            </TitleWrap>
+          </Card>
+        </Item>
+        <Item
+          key={0}
+          as="p"
+          rel="noopener noreferrer"
+          theme={theme}
+        >
+          <Card theme={theme}>
+            <Content>
+              <h4>DeFi</h4>
+              <p>
+                A Non-Fungible Tokens (NFT) project on top of Ethereum following ERC-721 standard with MetaMask login
+                system.
+              </p>
+            </Content>
+            <TitleWrap>
+              <Stats theme={theme}>
+                <Languages>
+                  <span key={0}>Javascript</span>
+                  <span key={1}>Solidity</span>
+                  <span key={1}>Shell</span>
+                </Languages>
+              </Stats>
+            </TitleWrap>
+          </Card>
+        </Item>
+        <Item
+          key={0}
+          as="p"
+          rel="noopener noreferrer"
+          theme={theme}
+        >
+          <Card theme={theme}>
+            <Content>
+              <h4>CyberSecurity platform / Scanning Tool</h4>
+              <p>
+                Identify vulnerabilities in running containers, images, hosts, and repositories. Building a Back-end
+                system with Golang, integrating multiple open-source tools for Cloud Cybersecurity.
+              </p>
+            </Content>
+            <TitleWrap>
+              <Stats theme={theme}>
+                <Languages>
+                  <span key={0}>Go</span>
+                  <span key={1}>ReactJS</span>
+                  <span key={1}>NodeJS</span>
+                  <span key={1}>Shell</span>
+                  <span key={1}>Docker</span>
+                </Languages>
+              </Stats>
+            </TitleWrap>
+          </Card>
+        </Item>
       </Grid>
     </Wrapper>
   );
