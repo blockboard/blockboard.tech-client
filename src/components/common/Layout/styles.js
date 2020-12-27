@@ -5,7 +5,11 @@ export const Global = createGlobalStyle`
     font-family: 'Roboto', Helvetica, sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-
+    
+    #projects, #platforms {
+      text-align: center;
+    }
+    
     article,
     aside,
     details,
@@ -203,7 +207,7 @@ export const Global = createGlobalStyle`
       margin-top: 0;
       padding-bottom: 0;
       padding-left: 0;
-      padding-right: 0;
+      padding-right: 20%;
       padding-top: 0;
       margin-bottom: 1.45rem;
     }
