@@ -7,7 +7,7 @@ module.exports = {
   defaultDescription: 'Building Decentralized Applications on the Blockchain.',
   socialLinks: {
     twitter: 'http://www.twitter.com/smakosh',
-    github: 'https://github.com/smakosh',
+    github: 'https://github.com/blockboard',
     linkedin: 'https://www.linkedin.com/company/block-board/',
     instagram: 'https://instagram.com/smakosh19',
     youtube: 'https://www.youtube.com/user/smakoshthegamer',
