@@ -17,8 +17,10 @@ export const Skills = () => {
         <Details theme={theme}>
           <h1>What we do</h1>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry’s standard dummy.
+            Blockboard is a blockchain focused technology firm exploring with innovative technologies to build new
+            systems, security and interactions. At Blockboard we focus on decentralized products and software in fields
+            like DeFi, Gaming, Cybersecurity and Digital Identity. We support the adoption of Blockchain technology and
+            make it possible for companies to integrate it.
           </p>
           {/* <Button as={AnchorLink} href="#contact">
             Hire me
