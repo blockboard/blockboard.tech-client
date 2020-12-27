@@ -59,7 +59,7 @@ export const Stats = styled.div`
     }
 
     span {
-      color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
+      color: ${({ theme }) => (theme === 'light' ? '#818181' : '#fff')};
       margin-left: 0.5rem;
     }
   }
