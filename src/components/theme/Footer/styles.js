@@ -46,7 +46,7 @@ export const Details = styled.div`
   h2,
   a,
   span {
-    color: #212121;
+    color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
   }
 
   @media (max-width: 680px) {
