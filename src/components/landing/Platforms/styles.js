@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding: 2rem 0;
+  padding: 12rem 0;
 `;
 
 export const Grid = styled.div`
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 8fr;
   gap: 1.2rem 1.2rem;
 
@@ -67,4 +67,16 @@ export const Stats = styled.div`
 export const Languages = styled.div`
   opacity: 0.5;
   font-size: 14px;
+`;
+
+export const Thumbnail = styled.div`
+  flex: 1;
+
+  @media (max-width: 960px) {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
 `;
