@@ -14,7 +14,7 @@ export const Intro = () => {
       <Header />
       <IntroWrapper as={Container}>
         <Details theme={theme}>
-          <h1>We are Blockboard</h1>
+          <h1>We are BB</h1>
           <h4>Building Decentralized Applications on the Blockchain.</h4>
           {/* <Button as={AnchorLink} href="#contact">
             Hire me
