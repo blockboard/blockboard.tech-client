@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import emailjs from 'emailjs-com';
 import { Formik, Form, FastField, ErrorMessage } from 'formik';
 import Recaptcha from 'react-google-recaptcha';
 import * as Yup from 'yup';
@@ -21,11 +22,13 @@ export default () => (
         .email('Invalid email')
         .required('Email field is required'),
       message: Yup.string().required('Message field is required'),
-      recaptcha: Yup.string().required('Robots are not welcome yet!'),
+      // recaptcha: Yup.string().required('Robots are not welcome yet!'),
     })}
     onSubmit={async ({ name, email, message }, { setSubmitting, resetForm, setFieldValue }) => {
-      try {
-        await axios({
+      // eslint-disable-next-line no-console
+      console.log('here');
+      /* try { */
+      /* await axios({
           method: 'POST',
           url: `${process.env.GATSBY_PORTFOLIO_FORMIK_ENDPOINT}`,
           headers: {
@@ -36,15 +39,34 @@ export default () => (
             email,
             message,
           }),
-        });
-        setSubmitting(false);
-        setFieldValue('success', true);
-        setTimeout(() => resetForm(), 6000);
-      } catch (err) {
+        }); */
+      emailjs
+        .send(
+          process.env.GATSBY_EMAILJS_SERVICE_ID,
+          process.env.GATSBY_EMAILJS_TEMPLATE_ID,
+          { name, email, message },
+          process.env.GATSBY_EMAILJS_USER_ID
+        )
+        .then(
+          result => {
+            // eslint-disable-next-line no-console
+            console.log(result.text);
+          },
+          error => {
+            // eslint-disable-next-line no-console
+            console.log('here Error');
+            // eslint-disable-next-line no-console
+            console.log(error.text);
+          }
+        );
+      setSubmitting(false);
+      setFieldValue('success', true);
+      setTimeout(() => resetForm(), 6000);
+      /* } catch (err) {
         setSubmitting(false);
         setFieldValue('success', false);
 				alert('Something went wrong, please try again!') // eslint-disable-line
-      }
+      } */
     }}
   >
     {({ values, touched, errors, setFieldValue, isSubmitting }) => (
@@ -88,7 +110,7 @@ export default () => (
           />
           <ErrorMessage component={Error} name="message" />
         </InputField>
-        {values.name && values.email && values.message && (
+        {/* {values.name && values.email && values.message && (
           <InputField>
             <FastField
               component={Recaptcha}
@@ -98,7 +120,7 @@ export default () => (
             />
             <ErrorMessage component={Error} name="recaptcha" />
           </InputField>
-        )}
+        )} */}
         {values.success && (
           <InputField>
             <Center>
