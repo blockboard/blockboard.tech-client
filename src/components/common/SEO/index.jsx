@@ -56,6 +56,7 @@ export const SEO = ({ title = defaultTitle, description = defaultDescription, lo
       {/* <meta name="image" content={Thumbnail} /> */}
 
       <meta property="og:image" content={Thumbnail} />
+      <meta property="og:image:secure" content={Thumbnail} />
       <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="1024" />
       <meta property="og:image:height" content="1024" />
