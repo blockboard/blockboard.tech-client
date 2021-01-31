@@ -1,8 +1,8 @@
 module.exports = {
   defaultTitle: 'Blockboard',
-  logo: 'https://blockboardco.netlify.app/favicon/favicon-512.png',
+  logo: 'https://www.blockboard.tech/favicon/favicon-512.png',
   author: 'Blockboard',
-  url: 'https://blockboardco.netlify.app/',
+  url: 'https://www.blockboard.tech/',
   legalName: 'Blockboard',
   defaultDescription: 'Building Decentralized Applications on the Blockchain.',
   socialLinks: {
