@@ -3,7 +3,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
 import ToggleTheme from 'components/theme/Header/ToggleTheme';
 import { Wrapper } from './styles';
-
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 const NavbarLinks = ({ desktop }) => {
   const { theme } = useContext(ThemeContext);
 
@@ -12,6 +12,9 @@ const NavbarLinks = ({ desktop }) => {
       <AnchorLink href="#about">About</AnchorLink>
       <AnchorLink href="#projects">Projects</AnchorLink>
       <AnchorLink href="#contact">Contact</AnchorLink>
+      <Router>
+          <Link to="/blog" target="_blank">blog</Link>        
+      </Router>
       <ToggleTheme />
     </Wrapper>
   );
