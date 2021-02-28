@@ -20,7 +20,7 @@ const News = React.memo(function BlogCard() {
   const [posts, setPosts] = useState([]);
   useEffect(async () => {
     const fetchData = async () => {
-      const result = await axios("http://127.0.0.1:8000/");
+      const result = await axios("http://127.0.0.1:8000/news_blog");
       setPosts(result.data);
     };
 
@@ -107,7 +107,7 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
       left: 0,
       width: "100%",
       height: "100%",
-      backgroundImage: "linear-gradient(147deg, #fe8a39 0%, #fd3838 74%)",
+      // backgroundImage: "linear-gradient(147deg, #fe8a39 0%, #fd3838 74%)",
       borderRadius: spacing(2), // 16
       opacity: 0.5,
     },
