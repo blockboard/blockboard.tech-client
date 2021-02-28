@@ -50,7 +50,8 @@ const News = React.memo(function BlogCard() {
                 body={post.body}
               />
               <Link href={post.url}>
-                <Button className={buttonStyles}>Read more</Button>
+                {/* <Button className={buttonStyles}>Read more</Button> */}
+                <Button className={styles.myButton}>Read more</Button>
               </Link>
             </CardContent>
           </Card>
@@ -119,6 +120,14 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
     marginTop: 24,
     textTransform: "initial",
   },
+  myButton:{
+    cursor: 'pointer',
+    // border-radius: '3px',
+    padding: '0.7rem 2.5rem',
+    // border: none,
+    color: '#fff',
+    background: '#1da1f2'
+  }
 }));
 
 // ---------------
