@@ -20,7 +20,7 @@ const News = () => {
   const [posts, setPosts] = useState([]);
   useEffect(async () => {
     const fetchData = async () => {
-      const result = await axios("http://127.0.0.1:8000/");
+      const result = await axios("http://127.0.0.1:8000/news_blog");
       setPosts(result.data);
     };
 
