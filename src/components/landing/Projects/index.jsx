@@ -15,7 +15,7 @@ export const Projects = () => {
         <Item key={0} as="p" rel="noopener noreferrer" theme={theme}>
           <Card theme={theme}>
             <Content>
-              <h4>CryptoWeirdos</h4>
+              <h4>NFT Art Collectibles</h4>
               <p>
                 A Non-Fungible Tokens (NFT) project on top of Ethereum following ERC-721 standard with MetaMask login
                 system, integrated with OpenSea marketplace.
@@ -38,7 +38,7 @@ export const Projects = () => {
           <Card theme={theme}>
             <Content>
               <h4>Unity Game LL</h4>
-              <p>A walthrough game on blockchain exploring a real city under development.</p>
+              <p>A walkthrough game on blockchain exploring a real city under development.</p>
             </Content>
             <TitleWrap>
               <Stats theme={theme}>
