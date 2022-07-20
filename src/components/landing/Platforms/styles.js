@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding: 12rem 0;
+  padding: 2rem 0;
 
   @media (max-width: 960px) {
     h2 {
@@ -18,11 +18,11 @@ export const Grid = styled.div`
   gap: 1.2rem 1.2rem;
 
   @media (max-width: 960px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   @media (max-width: 680px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 `;
 
@@ -39,9 +39,13 @@ export const Item = styled.div`
     color: ${({ theme }) => (theme === 'light' ? '#707070' : '#c7c7c7')};
   }
 
-  @media (max-width: 960px) {
-    margin-left:10px;
+  @media (max-width: 680px) {
+    p{
+      font-size:9px;
+    }
   }
+
+
   }
 `;
 
@@ -85,26 +89,6 @@ export const Thumbnail = styled.div`
 
   @media (max-width: 960px) {
     width: 100%;
-    img {
-      width: 150px !important;
-      margin-left: 55px;
-    }
-  }
-
-  @media (max-width: 600px) {
-    width: 100%;
-    img {
-      width: 100px !important;
-      margin-left: 60px;
-    }
-  }
-
-  @media (max-width: 290px) {
-    width: 100%;
-    img {
-      width: 100px !important;
-      margin-left: 40px;
-    }
   }
 
   img {
